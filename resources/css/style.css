@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body {
+    background: hsla(270, 100%, 95%, 1);
+    line-height: 1.4;
+    font-weight: 400;
+
+}
+
+contents, center {
+    text-align: center;
+}
+
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid hsl(270, 100%, 50%);
+    margin-top: -1.5rem;
+    /* height: 7rem; */
+    position: fixed;
+    z-index: 10;
+    background-color: hsl(270, 80%, 85%);
+}
+header .contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -1.5rem;
+}
+
+
+header img {
+    width: 10rem;
+    height: auto;
+    z-index: 12;
+    flex:1;
+    margin-left: -12rem;
+    margin: 0.5rem 0 0.5rem -12rem;
+}
+
+header nav ul {
+    display: flex;
+    margin-right: -8rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    vertical-align: bottom;
+    font-size:2rem;
+    font-weight: 700;
+    color: hsl(270, 100%, 40%)
+}
+
+
+.contents {
+    display: flex;
+    align-items: center;
+    justift-content: center;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+main {
+    position: relative;
+    top: 10rem;
+}

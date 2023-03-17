@@ -1,0 +1,11 @@
+import logo
+section sizes: max-width: 1600px
+header: 
+    background-color: darkgray
+    logo: float left; margin-left: 2rem
+    height: 5rem;
+    static, z-index
+
+
+
+    
