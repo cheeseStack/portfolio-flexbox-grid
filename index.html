@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -42,25 +45,31 @@
                 <div class="images-container sketch">
                     <img src="./resources/img/misc/me_drawing.jpg" alt=""> <!-- sketch image -->
                 </div>
-                <!-- about -->
+                <!-- about-me container-->
                 <div class="about-me">
-                    <h1>Trainee Full Stack Software / Web Developer</h1>
-                    <h2>Keith Rochfort</h2>
+                    <h1>Keith Rochfort</h1>
+                    <div class="profession">
+                        <h2>Junior Full Stack</h2>
+                        <h2>Software / Web Developer</h2>
+                    </div>
                     <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus optio ducimus natus amet porro nobis modi quas accusamus animi.</p>
+                        <p>Software and web development enthusiast, changing careers from carpentry and building, swapping my hammer and drill for a keyboard and mouse (and several monitors).</p>
+                    </div>
+                    <div class="github-button"> 
+                        <button><a href="https://github.com/cheeseStack" target="_blank">View my GitHub Repository</a></button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Portfolio details -->
         <div id="portfolio" class="container">
-            <div class="contents">
-                <h2>Portfolio</h2>
-                <h3>Here are some of my recent proects</h3>
+            <div class="contents text">
+                <h1>Portfolio</h1>
+                <h2>Here are some of my recent projects</h2>
                 <p>Click on the image to see the GitHub source code (opens in a new window)</p>
                 <div class="images-container"> <!-- Images of projects -->
                     <!-- Project 1 -->
-                    <div class="card">
+                    <div class="card project1">
                         <div class="img-container center">
                             <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
                         </div>
@@ -72,19 +81,19 @@
                         </div>
                     </div>
                     <!-- Project 2 -->
-                    <div class="card">
+                    <div class="card project2">
                         <div class="img-container center">
-                            <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
+                            <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/2_fix_CSS_Fotomatic.PNG" alt=""></a>
                         </div>
                         <div class="card-title center">
-                            <h2>CSS Flexbox - Cafe Site</h2>
+                            <h2>CSS Flexbox - Fotomatic</h2>
                         </div>
                         <div class="card-description center">
                             <p>Build a 1-page static site for a fictional cafe from given design brief, using Flexbox for alignment and positioning.</p>
                         </div>
                     </div>
                     <!-- Project 3 -->
-                    <div class="card">
+                    <div class="card project3">
                         <div class="img-container center">
                             <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
                         </div>
@@ -96,7 +105,7 @@
                         </div>
                     </div>
                     <!-- Project 4 -->
-                    <div class="card">
+                    <div class="card project4">
                         <div class="img-container center">
                             <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
                         </div>
@@ -108,7 +117,19 @@
                         </div>
                     </div>
                     <!-- Project 5 -->
-                    <div class="card">
+                    <div class="card project5">
+                        <div class="img-container center">
+                            <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
+                        </div>
+                        <div class="card-title center">
+                            <h2>CSS Flexbox - Cafe Site</h2>
+                        </div>
+                        <div class="card-description center">
+                            <p>Build a 1-page static site for a fictional cafe from given design brief, using Flexbox for alignment and positioning.</p>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="card project6">
                         <div class="img-container center">
                             <a href="https://github.com/cheeseStack/css-flexbox-cafe-project" target="_blank"><img src="./resources/img/projects/1_cafe_flexbox.PNG" alt=""></a>
                         </div>
@@ -125,18 +146,18 @@
         <!-- End of Portfolio section -->
 
         <!-- Start of contact section -->
-        <div class="contents center">
-            <div class="contact">
-                <div class="card email">
+        <div id="contact" class="container">
+            <div class="contents">
+                <div class="card# email">
                     <figure>
                         <img src="" alt=""> <!-- email icon-->
                     </figure>
                     <div class="contact-details">
                         <h3>email</h3>
-                        <p>keith@cheeseStack.net</p>
+                        <p><a href="mailto:keith@cheeseStack.net">keith@cheeseStack.net</a></p>
                     </div>
                 </div>
-                <div class="card phone"> 
+                <div class="card# phone"> 
                     <figure>
                         <img src="" alt=""> <!-- email icon-->
                     </figure><!-- phone icon-->
@@ -145,17 +166,25 @@
                         <p>07738 001729</p>
                     </div>
                 </div>
-                <div class="card map">
+                <div class="card# map">
                     <figure>
                         <img src="" alt=""> <!-- email icon-->
                     </figure>
-                    <h3>Location</h3>
+                    <h3>location</h3>
                     <p>I am based in Lancing, near Brighton, UK</p>
                     <div class="contact-details">
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End of contacts section -->
+
+        <!-- footer -->
+        <footer>
+            <div class="copyright center">
+                <p>&copy; cheeseStack 2023</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

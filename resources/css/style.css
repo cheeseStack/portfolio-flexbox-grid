@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -8,12 +8,13 @@ body {
     background: hsla(240, 100%, 85%, 1);
     line-height: 1.4;
     font-weight: 400;
-
 }
 
 
 header {
+    font-family: 'Nunito Sans', sans-serif;
     width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
     border-bottom: 1px solid hsl(240, 100%, 50%);
     margin-top: -3rem;
@@ -30,17 +31,17 @@ header .header-contents {
 }
 
 header img {
-    width: 10rem;
+    width: 12rem;
     height: auto;
     z-index: 12;
-    flex:1;
-    margin-left: -12rem;
-    margin: 0.5rem 0 0.5rem -12rem;
+    padding-left: 10rem;
+    margin: 0.25rem 0 0.25rem -12rem;
 }
 
 header nav ul {
     display: flex;
     margin-right: -8rem;
+    padding-right: 7rem;
 }
 
 nav ul li {
@@ -48,7 +49,7 @@ nav ul li {
     margin-right: 3rem;
 }
 
-nav a {
+nav a, #about a {
     text-decoration: none;
     vertical-align: bottom;
     font-size:2rem;
@@ -58,54 +59,50 @@ nav a {
 
 
 main {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     top: 8rem; // adjucts for fixed header
 }
 
-/* main-content box */
-.main-content {
-    border: 5px solid black;
-    margin: 0 auto;
-    width: 1200px;
+.center {
+    text-algin: center;
 }
 
 .images-container {
     width: 50%;
 }
 
-.container img {
-    width: 300px;
-    height: auto;
-} 
-
 .container {
-    box-sizing: border-box;
-    max-width: 95%;
-    border: 1px solid hsla(240, 100%, 50%, 0.5);
+    max-width: 100%;
+    /* box-sizing: border-box; */
+    /* border: 1px solid hsla(240, 100%, 50%, 0.5); */
     border-radius: 0.75rem;
     margin: 3rem auto;
-    padding: 3rem;  background: #fff;
-    flex: 1;
+    padding: 2rem;  
+    background: #fff;
 }
 
 .contents {
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    color: hsl(0, 0%, 30%);
   
     /* border: 3px dashed purple; */
 }
 
-.about-me  {
+.about-me {
     display: flex;
-    width: 100%;
-    flex-flow: column wrap;
-    justify-contents: center;
-    align-items: space-evenly;
-    border: 2px dotted red;
-    flex: 1 1;
+    width: 50%;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: start;
+    background-image: linear-gradient(90deg, #fff, hsla(240, 70%, 60%, 0.15), #fff);
+    border-radius: 10px;
+
 }
 
 .sketch {
@@ -113,18 +110,133 @@ main {
     justify-content: center;
     width: 30%;
     overflow: hidden;
+  
 }
 
 .sketch img {
     width: 100%;
     height: auto;
     margin: 0;
-    flex: 1 2;
 }
 
-#about h1 {
-    font-size: 3rem;
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Nunito Sans';
+    margin-bottom: -1rem;
 }
+
+h2 {
+    font-size: 2.5rem;
+}
+
 #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: -1.75rem;
+}
+
+.text p {
+    width: 90%;
+    float: left;
     font-size: 2rem;
+}
+#about p {
+    margin: 4rem auto;
+}
+.github-button button {
+    background-color: hsl(120, 90%, 90%);
+    padding: 0.5rem 1rem;
+    border: 1px solid hsl(240, 100%, 50%);
+    border-radius: 10px;
+    font-weight: lighter;
+    margin: 1rem;
+}
+
+.github-button button:hover {
+    background-color: hsl(240, 90%, 90%);
+    box-shadow: 4px 4px 15px;
+    transition: background-color 0.15s, box-shadow 0.2s;
+}
+
+#portfolio .contents {
+    flex-flow: column wrap;
+    text-align: center;
+
+}
+#portfolio .images-container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    /* grid-auto-rows: auto; */
+
+}
+ /* Portfolio Project Cards */
+.card {
+    width: 90%;
+    margin: 1rem;
+    border: 1px solid hsl(240, 100%, 50%);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    background-color: hsla(240, 90%, 90%, 0.5);
+    box-shadow: 5px 5px 10px;
+    /* flex: 1 2; */
+}
+
+.card:hover {
+    box-shadow: none;
+    background-color: hsla(120, 90%, 90%, 0.5);
+}
+
+.card .img-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* border: 3px solid red; */
+}
+
+.container .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+} 
+
+.card .card-title h2 {
+    border-top: 1px solid hsl(240, 100%, 50%);
+    border-bottom: 1px solid hsl(240, 100%, 50%);
+    font-size: 2rem;
+}
+
+.card .card-description p {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 auto;
+}
+
+
+/* Contact section */
+
+.contact-details {
+    margin: 1rem;
+}
+#contact h3 {
+    font-size: 2rem;
+}
+
+#contact p {
+    font-size: 1.5rem;
+}
+
+/* Footer copyright */
+
+footer p{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+a {
+    text-decoration: none;
 }
