@@ -36,31 +36,34 @@
 
     <!-- Main content -->
     <main>
-        <div class="main-content">
-            <!-- Top banner with picture and about details -->
-            <div id="banner">
-                <div class="contents center">
-                    <div id="about">
-                        <div class="headings">
-                            <!-- headings here -->
-                            <h1>Trainee Full Stack Developer</h1>
-                            <h2>Keith Rochfort</h2>
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus optio ducimus natus amet porro nobis modi quas accusamus animi.</p>
-                        </div>
-                    </div>
+        <!-- Top banner with picture and about details -->
+        <div id="about">
+            <!-- #about container -->
+            <div class="containter">
+                <div class="sketch-and-name">
+                        <!-- left part: sketch image -->
                     <div class="images-container">
                         <img src="" alt=""> <!-- sketch image -->
                     </div>
-                </div>
+                    <!-- right part: info and about -->
+                    <div class="headings">
+                        <!-- headings here -->
+                        <h1>Trainee Full Stack Developer</h1>
+                        <h2>Keith Rochfort</h2>
+                    </div>
+                    <div class="bio-and-github">
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus optio ducimus natus amet porro nobis modi quas accusamus animi.</p>
+                    </div>                 
+                </div> 
             </div>
 
+
             <!-- Portfolio details -->
-            <div class="contents center">
-                <div id="portfolio">
-                    <h2>Portfolio</h2>
-                    <h3>Here are some of my recent projects</h3>
+            <div id="portfolio" >
+                <div class="containter">
+                    <div class="center">
+                        <h1>Portfolio</h1>
+                    <h2>Here are some of my recent projects</h2>
                     <p>Click on the image to see the GitHub source code (opens in a new window)</p>
                     <div class="images-container"> <!-- Images of projects -->
                         <!-- Project 1 -->
@@ -126,12 +129,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+                    
             <!-- End of Portfolio section -->
 
             <!-- Start of contact section -->
-            <div class="contents center">
-                <div class="contact">
-
+            <div id="contact">
+                <div class="container">
                     <div class="card email">
                         <figure>
                             <img src="" alt=""> <!-- email icon-->
@@ -163,5 +167,15 @@
             </div>
         </div>
     </main>
+
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            <div class="center">
+                <p>&copy; cheeseStack 2023</p>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
