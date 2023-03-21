@@ -1,80 +1,186 @@
 html {
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
-    margin: 0;
+    font-weight: 400;
+    line-height: 1.6;
 }
-
 
 body {
-    background: hsla(270, 100%, 95%, 1);
-    line-height: 1.4;
-    font-weight: 400;
-    margin: 0;
-
+    color: hsl(211, 12%, 28%); 
 }
 
-.center {
-    text-align: center;
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
+p {
+    font-size: 1.5rem;
+}
 
 header {
-    margin: 0;
     width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid hsl(270, 100%, 50%);
-    margin-top: -1.5rem;
-    padding: 0.25rem;
-    /* height: 7rem; */
     position: fixed;
-    z-index: 10;
-    background-color: hsl(270, 80%, 85%);
+    z-index: 100;
+    background-color: hsla(50, 100%, 95%, 1);
+   
 }
-header .contents {
+
+header .content {
+    padding: 0 3rem;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    border-bottom: 1px solid #A03525;
+    box-shadow: 0px 2px 5px;
 }
 
-.logo-container {
-    flex:1;
-}
-
-header img {
+header .logo-container {
     width: 10rem;
     height: auto;
-    z-index: 12;
-    margin-left: 2rem;
-    
 }
 
-header nav ul {
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav ul {
     display: flex;
-    margin-right: 2rem;
+   
 }
 
 nav ul li {
     list-style-type: none;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
 }
 
-nav a {
+a {
     text-decoration: none;
-    vertical-align: bottom;
-    font-size:2rem;
+    color: hsl(8, 62%, 39%);
     font-weight: 700;
-    color: hsl(270, 100%, 40%)
+    font-size: 1.5rem;
 }
 
+a:hover {
+    color: hsl(8, 100%, 59%);
+    text-decoration: underline;
+
+}
 
 main {
     position: relative;
-    top: 10rem;
+    top: 7rem;
 }
 
-// change class of image containers
-/* 
-.image-container img {
-    display: block;
-    max-width: 100%;
-  } */
+/* Header mobile */
+
+@media only screen and (max-width: 680px) {
+    nav a {
+        font-size: 1rem;
+    }
+    header .content {
+        padding:0 1rem;
+    }
+    nav ul li {
+        padding-left: 1.5rem;
+    }
+    header {
+        position: relative;;
+    }
+    main {
+        position: static;
+    }
+}
+
+    /* flex-direction: column-reverse */
+
+    /* banner section */
+#about .container {
+    background-color: hsla(50, 100%, 96%, 0.5);
+    padding: 2.75rem;
+    display: flex;
+    /* border: 3px solid red; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sketch-and-name {
+    width: 45%
+}
+.sketch-and-name img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.about-right {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    /* border: 1px solid black;  */
+}
+
+.images-container {
+    background-color: #fff;
+    padding: 1rem;
+    border: 0.5px solid gray;
+    box-shadow: 4px 4px 6px;
+}
+
+@media only screen and (max-width: 1200px ) {
+    #about .container {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .sketch-and-name {
+        width: 95%;
+    }
+    .about-right {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    main {
+      margin-top: 0;  
+      padding: 0;
+      position
+    } 
+    h1 {
+        font-size: 2.75rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+/*  Portfolio Scetion */
+
