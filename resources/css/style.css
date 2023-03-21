@@ -115,7 +115,7 @@ main {
 }
 
 .sketch-and-name {
-    width: 45%
+    width: 40%
 }
 .sketch-and-name img {
     width: 100%;
@@ -125,7 +125,7 @@ main {
 
 
 .about-right {
-    width: 50%;
+    width: 55%;
     padding: 2rem;
     display: flex;
     flex-flow: column;
@@ -150,7 +150,7 @@ main {
         justify-content: flex-start;
     }
     .sketch-and-name {
-        width: 95%;
+        width: 85%;
     }
     .about-right {
         display: flex;
