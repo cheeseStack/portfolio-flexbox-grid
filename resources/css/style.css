@@ -107,7 +107,7 @@ main {
     /* banner section */
 #about .container {
     background-color: hsla(50, 100%, 96%, 0.5);
-    padding: 2.75rem;
+    padding: 0 1.5rem;
     display: flex;
     /* border: 3px solid red; */
     align-items: center;
@@ -134,7 +134,7 @@ main {
     /* border: 1px solid black;  */
 }
 
-.images-container {
+.keith-container {
     background-color: #fff;
     padding: 1rem;
     border: 0.5px solid gray;
@@ -143,6 +143,7 @@ main {
 
 @media only screen and (max-width: 1200px ) {
     #about .container {
+        padding-top: 0;
         display: flex;
         flex-flow: column;
         flex-direction: column-reverse;
@@ -150,7 +151,7 @@ main {
         justify-content: flex-start;
     }
     .sketch-and-name {
-        width: 95%;
+        width: 100%;
     }
     .about-right {
         display: flex;
@@ -161,7 +162,6 @@ main {
     main {
       margin-top: 0;  
       padding: 0;
-      position
     } 
     h1 {
         font-size: 2.75rem;
@@ -181,6 +181,45 @@ main {
     }
 }
 
+@media only screen and (max-width: 380px ) {
+    #about .container {
+        padding: 0.25rem;
+    }
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .images-container {
+        background-color: #fff;
+        border: 0.5px solid gray;
+        box-shadow: none;
+    }
+}
+
 
 /*  Portfolio Scetion */
+.images-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.images-container .card {
+    width: 30%;
+}
