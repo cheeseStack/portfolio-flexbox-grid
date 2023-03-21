@@ -79,7 +79,7 @@ a:hover {
 
 main {
     position: relative;
-    top: 7rem;
+    top: 5.5rem;
 }
 
 /* Header mobile */
@@ -134,7 +134,7 @@ main {
     /* border: 1px solid black;  */
 }
 
-.images-container {
+.keith-container {
     background-color: #fff;
     padding: 1rem;
     border: 0.5px solid gray;
@@ -180,7 +180,83 @@ main {
         font-size: 1rem;
     }
 }
+@media only screen and (max-width: 400px ) {
+    #about .container {
+        padding: 0.5rem;
+    }
+   
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
 
 
 /*  Portfolio Scetion */
+.center {
+    text-align: center;
+}
 
+#portfolio h1 {
+    background-color: hsla(50, 100%, 85%, 1);
+    margin-bottom: -1rem;
+}
+#portfolio h2 {
+    margin-bottom: -1rem;
+}
+
+#portfolio .container {
+    background-color: hsla(50, 100%, 96%, 0.5);
+    padding: 1.5rem;
+}
+#portfolio .images-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#portfolio .card {
+    max-width: 30%;
+}
+
+#portfolio .card img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio .images-container {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.5rem 0;
+        background-color: #fff;
+        border: none;
+
+    } 
+    #portfolio .card {
+        max-width: 90%;
+    }
+    #portfolio .container {
+        padding: 0;
+    }
+
+}
+
+/* cards */
+/* CARDS NEXT  */
