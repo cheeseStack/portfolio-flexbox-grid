@@ -107,7 +107,7 @@ main {
     /* banner section */
 #about .container {
     background-color: hsla(50, 100%, 96%, 0.5);
-    padding: 2.75rem;
+    padding: 0.75rem;
     display: flex;
     /* border: 3px solid red; */
     align-items: center;
@@ -115,10 +115,15 @@ main {
 }
 
 .sketch-and-name {
-    width: 40%
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    align-items: center;
 }
 .sketch-and-name img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -134,23 +139,45 @@ main {
     /* border: 1px solid black;  */
 }
 
+.banner-logo {
+    width: 90%;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.banner-logo img{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
 .keith-container {
+    width: 90%;
     background-color: #fff;
     padding: 1rem;
     border: 0.5px solid gray;
     box-shadow: 4px 4px 6px;
+    background-color: hsla(50, 100%, 85%, 1);
 }
 
 @media only screen and (max-width: 1200px ) {
     #about .container {
         display: flex;
         flex-flow: column;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        padding: 3rem 0.5rem 1rem;
     }
     .sketch-and-name {
         width: 85%;
+        padding: 0;
+        flex-flow: row nowrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .banner-logo, .keith-container {
+        width: 40%;
     }
     .about-right {
         display: flex;
@@ -182,7 +209,24 @@ main {
 }
 @media only screen and (max-width: 400px ) {
     #about .container {
+        padding: 0 0.5rem;
+        position: relative;
+        top: -2rem;
+    }
+    .sketch-and-name {
+        width: 85%;
+        padding: 0;
+        flex-flow: column;
+        justify-content: flex-start;
+
+    }
+    .banner-logo{
+        width: 60%;
+    }
+    .keith-container {
+        width: 50%;
         padding: 0.5rem;
+        margin-top: -2rem;
     }
    
     h1 {
