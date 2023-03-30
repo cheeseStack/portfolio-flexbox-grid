@@ -88,6 +88,7 @@ main {
     nav a {
         font-size: 1rem;
     }
+
     header .content {
         padding:0 1rem;
     }
@@ -102,9 +103,6 @@ main {
     }
 }
 
-    /* flex-direction: column-reverse */
-
-    /* banner section */
 #about .container {
     background-color: hsla(50, 100%, 96%, 0.5);
     padding: 0.75rem;
@@ -142,7 +140,9 @@ main {
     flex-flow: column;
     justify-content: space-between;
     align-items: start;
-    /* border: 1px solid black;  */
+}
+.general-info a {
+    font-size: 1.5rem;
 }
 
 #about .banner-logo {
@@ -163,9 +163,6 @@ main {
     padding: 1rem;
     border: 2px solid gray;
     border-radius: 0.625rem;
-    z-index:3;
-    /* position: relative;
-    bottom: 4rem; */
     box-shadow: 4px 4px 6px;
     background-color: hsla(50, 100%, 85%, 1);
 }
@@ -174,20 +171,16 @@ main {
     max-width: 100%;
     height: auto;
     overflow: hidden;
-    z-index:1;
     
 }
-
-/* .keith-container {
-    width: 90%;
-    background-color: #fff;
-    padding: 1rem;
-    border: 0.5px solid gray;
-    border-radius: 0.625rem;
-    box-shadow: 4px 4px 6px;
-    background-color: hsla(50, 100%, 85%, 1);
-} */
-
+#keith-sketch {
+    display: block;
+    transition: display 2s;
+}
+#keith-photo {
+    display: block;
+    transition: display 2s;
+}
 
 
 @media only screen and (max-width: 1200px ) {
@@ -215,6 +208,9 @@ main {
         width: 100%;
         padding: 0;
         padding-bottom: 1rem;
+    }
+    .general-info a {
+        font-size: 1rem;
     }
     main {
       margin-top: 0;  
@@ -276,6 +272,9 @@ main {
     p {
         font-size: 1rem;
     }
+    .general-info a {
+        font-size: 1rem;
+    }
 }
 
 
@@ -321,6 +320,7 @@ main {
     justify-content: space-evenly;
     height: 30rem;
     box-shadow: 4px 4px 6px;
+    transition: background-color 0.5s;
 }
 
 #portfolio .card:hover {
@@ -430,8 +430,7 @@ main {
 }
 #contact h2 {
     margin-top: 2rem;
-    text-align: center;
-    background-color: #FFF2B3;
+    text-align: center
 }
 
 #contact h3 {
