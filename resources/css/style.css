@@ -14,7 +14,7 @@ h1 {
     font-weight: 700;
 }
 h2 {
-    font-size: 2.75rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 h3 {
@@ -117,14 +117,19 @@ main {
 .sketch-and-name {
     width: 30%;
     height: auto;
+    padding: 0;
     display: flex;
     flex-flow: column wrap;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
+    /* border: 3px solid red; */
+    position: relative;
+    bottom: 3rem;
 }
 .sketch-and-name img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 
@@ -139,8 +144,8 @@ main {
     /* border: 1px solid black;  */
 }
 
-.banner-logo {
-    width: 90%;
+#about .banner-logo {
+    width: 60%;
     padding: 1rem;
     overflow: hidden;
 }
@@ -149,9 +154,30 @@ main {
     max-width: 100%;
     height: auto;
     padding: 1rem;
+    overflow: hidden;
+}
+.keith-container {
+    width: 60%;
+    background-color: #fff;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 0.625rem;
+    z-index:3;
+    /* position: relative;
+    bottom: 4rem; */
+    box-shadow: 4px 4px 6px;
+    background-color: hsla(50, 100%, 85%, 1);
 }
 
-.keith-container {
+.keith-container img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index:1;
+    
+}
+
+/* .keith-container {
     width: 90%;
     background-color: #fff;
     padding: 1rem;
@@ -159,7 +185,9 @@ main {
     border-radius: 0.625rem;
     box-shadow: 4px 4px 6px;
     background-color: hsla(50, 100%, 85%, 1);
-}
+} */
+
+
 
 @media only screen and (max-width: 1200px ) {
     #about .container {
@@ -176,6 +204,7 @@ main {
         flex-flow: row nowrap;
         flex-direction: row-reverse;
         justify-content: space-between;
+        bottom: 0;
     }
     .banner-logo, .keith-container {
         width: 40%;
@@ -254,11 +283,11 @@ main {
     text-align: center;
 }
 
-#portfolio h1 {
+#portfolio h2 {
     background-color: hsla(50, 100%, 85%, 1);
     margin-bottom: -1rem;
 }
-#portfolio h2 {
+#portfolio h3 {
     margin-bottom: -1rem;
 }
 
@@ -311,13 +340,13 @@ main {
 }
 
 
-#portfolio h1 {
+/* #portfolio h1 {
     font-size: 2.5rem;
 }
 
 #portfolio h2 {
     font-size: 1.75rem;
-}
+} */
 #portfolio p {
     font-size: 1.25rem;
 }
@@ -404,6 +433,10 @@ main {
     background-color: #FFF2B3;
 }
 
+#contact h3 {
+    margin-bottom: 1rem;
+}
+
 .contact-method {
     max-width: 30%;
     height: auto;
@@ -431,11 +464,15 @@ main {
 }
 
 #contact p {
-    margin-top:-1.5rem;
+    letter-spacing: 0.15rem;
 }
 
 .contact-details {
     margin-top: 2rem;
+}
+
+.contact-method:hover {
+    background-color: hsla(50, 100%, 85%, 0.3)
 }
 
 @media only screen and (max-width: 800px) {
