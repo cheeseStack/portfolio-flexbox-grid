@@ -327,6 +327,13 @@ main {
    
 }
 
+.project-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
 .card-title {
     border-bottom: 1px solid hsl(0, 0%, 50%);
     padding-bottom: 1rem;
