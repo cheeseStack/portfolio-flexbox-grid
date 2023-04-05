@@ -82,24 +82,107 @@ main {
     top: 5.5rem;
 }
 
+/* nav icon for mobiles */
+#mobile {
+    display: none;
+}
+
+#mobile img {
+    width: 2.5rem;
+}
+
+.original-burger {
+    background-color: none;
+    transition-property: background-color rotate;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    border-radius: 0.3rem;
+
+}
+
+.transformed-burger {
+    transform: rotate(90deg);
+    background-color: hsla(50, 100%, 75%, 1); 
+    transition-property: background-color rotate;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s
+}
+
+/* mobile menu when burger icon clicked */
+#mobile-menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    right: 1rem;
+}
+
+#mobile-nav {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#mobile-nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#mobile-nav li {
+      background-color:hsla(50, 100%, 85%, 1);
+      margin: 0.5rem auto;
+      padding: 0.25rem 2.5rem;
+      border: 1px solid gray;
+      box-shadow: 2px 2px 4px;
+      border-radius: 0.625rem;
+}
+
+
+#mobile-nav li:last-child {
+    margin-bottom: 2rem;
+    
+}
+
 /* Header mobile */
 
 @media only screen and (max-width: 680px) {
     nav a {
         font-size: 1rem;
     }
-
     header .content {
-        padding:0 1rem;
+        padding: 0 1rem;
     }
     nav ul li {
         padding-left: 1.5rem;
     }
     header {
-        position: relative;;
+        position: relative;
     }
     main {
         position: static;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+    header .logo-container {
+        width: 5rem;
+        height: auto;
+    }
+    .flat-icon {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.75rem;
     }
 }
 
@@ -178,7 +261,7 @@ main {
     transition: display 2s;
 }
 #keith-photo {
-    display: block;
+    display: none;
     transition: display 2s;
 }
 
